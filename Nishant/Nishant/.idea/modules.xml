@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Nishant.iml" filepath="$PROJECT_DIR$/.idea/Nishant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nishant Swap Numbers/Nishant Swap Numbers.iml" filepath="$PROJECT_DIR$/Nishant Swap Numbers/Nishant Swap Numbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nishant calculate simple interest/Nishant calculate simple interest.iml" filepath="$PROJECT_DIR$/Nishant calculate simple interest/Nishant calculate simple interest.iml" />
+    </modules>
+  </component>
+</project>
