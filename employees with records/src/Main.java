@@ -1,8 +1,7 @@
 public class Main {
 
     public static void main(String args[]){
-        Employees employee =new Employees("Abc",251000,"xyz");
+        Employee employee =new Employee(25,"abcd",25000);
         System.out.println(employee);
-        System.out.println(employee.salary());
     }
 }
