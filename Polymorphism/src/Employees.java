@@ -29,8 +29,11 @@ public class Employees extends Person {
         }
         return false;
     }
-
-    @Override
+    public boolean equals(Object p1){
+        Employees p2=(Employees)p1;
+        return (p2.age==this.age) && (p2.name==this.name) ;
+    }
+    @Over ride
     public String toString() {
         return super.toString()+"eid="+eid+" Salary="+salary;
     }

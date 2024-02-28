@@ -13,8 +13,9 @@ public class Main {
         Person p2=new Person(11,"adfc","pune");
         System.out.println(p1.equals(p2));
 
-
-
+        Employees e1=new Employees(11,"abc","pune",35646);
+        Employees e2=new Employees(11,"abc","pune",35646);
+        System.out.println(e2.equals(e1));
     }
 
 }
