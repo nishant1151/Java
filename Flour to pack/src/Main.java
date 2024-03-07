@@ -1,6 +1,14 @@
 public class Main {
     public  static void main(String args[]){
-Flourtopack f1=new Flourtopack();
-System.out.println(f1.canPack(2,2,11));
+        System.out.println(tolowercase("hello"));
+    }
+
+
+    public static String tolowercase(String str){
+        char arr[]=str.toCharArray();
+        int len =arr.length;
+        arr[len-1]=(char)(arr[len-1]-32);
+        String str1= new String(arr);
+        return str1;
     }
 }

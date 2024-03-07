@@ -1,14 +1,22 @@
-public class Flourtopack {
-        public boolean canPack(int bigCount ,int smallCount,int goal){
-    int totalCount=(bigCount*5)+smallCount;
-            if(totalCount>=goal){
+import java.net.HttpRetryException;
 
-                if((bigCount*5)%5==0 && smallCount%goal==0)
-                {
-                    return true;
+public class Flourtopack {
+        public boolean canPack(int bigCount ,int smallCount,int goal) {
+
+           int temp,totalCount=bigCount+smallCount;
+
+            if(bigCount>0 && smallCount>0){
+
+                if((bigCount*5)/goal==0){
+                    temp=(bigCount*5)-goal;
+                    if(smallCount%temp==0){
+                    return true;}
+                    else return false;
                 }
-                else return false;
+
             }
-            else return false;
+            return false;
+
+
         }
 }
