@@ -12,13 +12,13 @@ public class SmartKitchen {
    }
    public void setKitchenState(boolean ref,boolean dish,boolean coffee){
        if(ref){
-           refigrator.orderFood();
+           refigrator.hasWorkToDo();
        }
        if(dish){
-           dishwasher.doDishes();
+           dishwasher.hasWorkToDo();
        }
        if(coffee){
-           coffeemaker.brewCoffee();
+           coffeemaker.hasWorkToDo();
        }
    }
    public void doKitchen(){

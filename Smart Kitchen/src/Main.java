@@ -4,7 +4,8 @@ public class Main {
         Dishwasher dishwasher=new Dishwasher();
         Coffeemaker coffeemaker=new Coffeemaker();
         SmartKitchen smartKitchen=new SmartKitchen(refigrator,dishwasher,coffeemaker);
-        smartKitchen.setKitchenState(refigrator.hasWorkToDo(), dishwasher.hasWorkToDo(), false);
+        smartKitchen.setKitchenState(true, true, false);
+        smartKitchen.doKitchen();
     }
 
 }
