@@ -31,7 +31,7 @@ public class Printer {
        else{
            pagesPrinted=pages;
        }
-       tonnerLevel--;
+       tonnerLevel=tonnerLevel-pages;
        return pagesPrinted;
    }
        else {

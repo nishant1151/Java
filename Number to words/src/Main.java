@@ -7,7 +7,7 @@ public class Main {
 
 Number_to_words n1=new Number_to_words();
 
-n1.numberTowords(1502);
+n1.numberTowords(1002);
 
 
 
