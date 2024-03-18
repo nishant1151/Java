@@ -34,8 +34,14 @@ public class Main {
 
         int []arr5={1,2,0,5,2};
         System.out.println(Arrays.toString(Arrayutilities.copyArray(arr,arr5)));
+        String[] arr7={"abc","bcd","gej","abc","bcd"};
+        String[] arr8={"abc","bcd"};
+        System.out.println(Arrayutilities.arrayequals(arr7,arr8));
 
+        System.out.println(Arrays.toString(Arrayutilities.arrayCopy(arr7,arr7.length)));
+
+        System.out.println(  Arrayutilities.binarySearch(arr7,"gej"));
+        System.out.println(Arrayutilities.);
     }
 
 }
-
