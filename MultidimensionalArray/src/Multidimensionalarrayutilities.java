@@ -101,4 +101,11 @@ return reverseInternalArray(arr);
         return transpose;
     }
 
+
+    public static void matrixProduct(int[][]arr1,int[][]arr2){
+        for(int i=0;i<arr1.length;i++){
+
+        }
+    }
+
 }
