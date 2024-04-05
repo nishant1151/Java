@@ -11,7 +11,11 @@ public class Developer extends Employees {
 
     }
 
+<<<<<<< HEAD
 //    @Override
+=======
+    @Override
+>>>>>>> dd1ab6b9541e58157cd90088d17e861f5e5352b8
     public double totalSalary() {
        double hra ,ta ,da;
        hra=salary*15/100;
