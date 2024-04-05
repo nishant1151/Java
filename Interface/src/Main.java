@@ -4,6 +4,8 @@ public class Main {
         flightEnabled.takeOff();
         flightEnabled.fly();
         flightEnabled.land();
+        flightEnabled.engineType();
+        flightEnabled.planeCrash();
 
     }
 }
