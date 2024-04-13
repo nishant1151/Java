@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -39,6 +40,27 @@ public class Main {
         developerList.add(developer1);
         developerList.add(developer2);
         developerList.add(developer3);
+
+//        int[][] arr={
+//                {1,2,3},
+//                {4,5,6},
+//                {7,8,9}
+//        };
+
+//        for(int[]arr1:arr){
+//            for(int data:arr1){
+//                System.out.println(data);
+//            }
+//        }
+
+        int arr[][]=new int[3][3];
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                arr[i][j]=10+j;
+            }
+        }
+
+        System.out.println(Arrays.deepToString(arr));
 
 //        displayList(developerList);
     }
