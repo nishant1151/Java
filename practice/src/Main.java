@@ -1,33 +1,19 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.net.NetworkInterface;
+
 public class Main {
-
-    public static void main(String [] args){
-
-
-        CricketBallPlayer cricketBallPlayer=new CricketBallPlayer(22,"abcd",55);
-        CricketBallPlayer cricketBallPlayer1=new CricketBallPlayer(22,"abc",35);
-        CricketBallPlayer cricketBallPlayer2=new CricketBallPlayer(22,"asdd",5);
-        CricketBallPlayer cricketBallPlayer3=new CricketBallPlayer(22,"zbcd",65);
-        CricketBallPlayer cricketBallPlayer4=new CricketBallPlayer(22,"bcd",15);
+    public static void main(String []args){
+        MyThreadOne myThreadOne=new MyThreadOne();
+        myThreadOne.start();
+        MyThreadOne myThreadOne1=new MyThreadOne();
+        myThreadOne1.start();
 
 
-      List<CricketBallPlayer> teams=new ArrayList<>();
-        teams.add(cricketBallPlayer);
-        teams.add(cricketBallPlayer1);
-        teams.add(cricketBallPlayer2);
-        teams.add(cricketBallPlayer3);
-        teams.add(cricketBallPlayer4);
+        MyThreadUsingInterface myThreadUsingInterface= new MyThreadUsingInterface();
 
-//        teams.displayTeam();
+        Thread thread=new Thread(myThreadUsingInterface);
+        thread.start();
 
-        display(teams);
-
-
+        System.out.println("Code Ended");
     }
 
-    public static<T> void display(FootBallPlayer<? super Player>l1 ){
-        System.out.println(l1);
-
-    }
 }
