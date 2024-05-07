@@ -1,19 +1,29 @@
-import java.net.NetworkInterface;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
-    public static void main(String []args){
-        MyThreadOne myThreadOne=new MyThreadOne();
-        myThreadOne.start();
-        MyThreadOne myThreadOne1=new MyThreadOne();
-        myThreadOne1.start();
+    public static void main(String[] args) {
 
 
-        MyThreadUsingInterface myThreadUsingInterface= new MyThreadUsingInterface();
+        Person person=new Person("abc",52);
+        Person person1=new Person("thj",55);
+        Person person2=new Person("def",85);
 
-        Thread thread=new Thread(myThreadUsingInterface);
-        thread.start();
+        List<Person> list=new ArrayList<>();
 
-        System.out.println("Code Ended");
+        list.add(person1);
+        list.add(person2);
+        list.add(person);
+
+        Collections.sort(list);
+
+        System.out.println(list);
+
+        System.out.println( Collections.binarySearch(list,new Person("ab",5)));
+
+
+
     }
-
 }
